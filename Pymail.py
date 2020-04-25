@@ -6,7 +6,7 @@ import config
 EMAIL_ADDRESS = config.EMAIL_ADDRESS
 EMAIL_PASSWORD = config.PASSWORD
 
-contacts = ['', '']
+contacts = ['', '']          #list of mails, to which you are sending the mail
 
 files = ['1.jpeg','2.jpeg']
 # files = ['resumeGFG.pdf']
