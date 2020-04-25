@@ -6,10 +6,6 @@ import config
 EMAIL_ADDRESS = config.EMAIL_ADDRESS
 EMAIL_PASSWORD = config.PASSWORD
 
-
-
-
-
 contacts = ['', '']
 
 files = ['1.jpeg','2.jpeg']
@@ -27,11 +23,6 @@ for file in files:
 		file_type = imghdr.what(f.name)
 		file_name= f.name
 	msg.add_attachment(file_data, maintype='image', subtype = file_type, filename= file_name)
-
-
-
-
-
 
 with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
     smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
